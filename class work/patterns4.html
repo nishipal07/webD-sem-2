@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid</title>
+</head>
+<body>
+    
+    <script>
+
+// Pyramid
+//     let rows = 5;
+//     for(let i = 1; i <= rows; i++){
+//     let pattern = "";
+//     // space loop
+//     for(let j = 1; j <= rows - i; j++){
+//         pattern += " ";
+//     }
+//     // star loop
+//     for(let k = 1; k <= i; k++){
+//         pattern += "* ";
+//     }
+//     console.log(pattern);
+//     }
+
+
+// ulta pyramid
+// let rows = 5;
+// for(let i = rows; i >= 1; i--){
+//     let pattern = "";
+//     // space loop
+//     for(let j = 1; j <= rows - i; j++){
+//         pattern += " ";
+//     }
+//     // star loop
+//     for(let k = 1; k <= i; k++){
+//         pattern += "* ";
+//     }
+//     console.log(pattern);
+// }
+
+
+// left to right pyramid 
+// let rows = 5;
+// for(let i = 1; i <= rows; i++){
+//     let pattern = "";
+//     for(let j = 1; j <= i; j++){
+//         pattern += "* ";
+//     }
+//     console.log(pattern);
+// }
+// for(let i = rows-1; i >= 1; i--){
+//     let pattern = "";
+//     for(let j = 1; j <= i; j++){
+//         pattern += "* ";
+//     }
+//     console.log(pattern);
+// }
+
+
+//right to left pyramid 
+let rows = 5;
+for(let i = 1; i <= rows; i++){
+    let pattern = "";
+    for(let j = 1; j <= rows-i; j++){
+        pattern += "  ";
+    }
+    for(let k = 1; k <= i; k++){
+        pattern += "* ";
+    }
+    console.log(pattern);
+}
+for(let i = rows-1; i >= 1; i--){
+    let pattern = "";
+    for(let j = 1; j <= rows-i; j++){
+        pattern += "  ";
+    }
+    for(let k = 1; k <= i; k++){
+        pattern += "* ";
+    }
+    console.log(pattern);
+}
+
+</script>
+
+</body>
+</html>

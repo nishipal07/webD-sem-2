@@ -7,13 +7,76 @@
 </head>
 <body>
     <script>
-        let n=5;
-        let patterns=" ";
-        for(let i=0;i<=n;i++){
-            
-        }
+       // repeated alphabet triangle
+//         let rows = 5;
+// for(let i = 1; i <= rows; i++){
+//     let pattern = "";
+//     let ch = String.fromCharCode(64 + i);
+//     for(let j = 1; j <= i; j++){
+//         pattern += ch + " ";
+//     }
+//     console.log(pattern);
+// }
 
-        
+
+// continous triangle
+// let rows = 5;
+// let ch = 65;   // ASCII value of A
+// for(let i = 1; i <= rows; i++){
+//     let pattern = "";
+//     for(let j = 1; j <= i; j++){
+//         pattern += String.fromCharCode(ch) + " ";
+//         ch++;
+//     }
+//     console.log(pattern);
+// }
+
+        // repeated number triangle
+//         let rows = 5;
+// for(let i = 1; i <= rows; i++){
+//     let pattern = "";
+//     for(let j = 1; j <= i; j++){
+//         pattern += j + " ";
+//     }
+//     console.log(pattern);
+// }
+
+
+// continous number triangle
+// let rows = 4;
+// let num = 1;
+// for(let i = 1; i <= rows; i++){
+//     let pattern = "";
+//     // spaces
+//     for(let j = 1; j <= rows - i; j++){
+//         pattern += "  ";
+//     }
+//     // numbers
+//     for(let k = 1; k <= i; k++){
+//         if(num <= 10){
+//             pattern += num + " ";
+//             num++;
+//         }
+//     }
+//     console.log(pattern);
+// }
+
+
+// Palindrome Triangle 
+let rows = 5;
+for(let i = 1; i <= rows; i++){
+    let pattern = "";
+    // increasing numbers
+    for(let j = 1; j <= i; j++){
+        pattern += j + " ";
+    }
+    // decreasing numbers
+    for(let k = i-1; k >= 1; k--){
+        pattern += k + " ";
+    }
+    console.log(pattern);
+}
+
     </script>
 </body>
 </html>
