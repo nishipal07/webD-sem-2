@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Counter</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  border: 2px solid #333;
+  padding: 20px;
+}
+.container {
+  background: #f7f7f7;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+}
+h1 {
+  color: #000;
+  margin-bottom: 20px;
+}
+.counter {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+button {
+  padding: 10px 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e73d8;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #155bb5;
+}
+.reset {
+  display: block;
+  margin: 15px auto 0;
+}
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    
+  </div>
+   
+  <script type="text/babel">
+    function App() {
+      const [count, setCount] = React.useState(0);
+
+      return (
+        <div style={{ textAlign: "center", marginTop: "50px" }}>
+          <h1>React Counter App</h1>
+          
+          <h2>{count}</h2>
+
+          <button onClick={() => setCount(count + 1)}>Increment</button>
+          <button onClick={() => setCount(count - 1)}>Decrement</button>
+          <button onClick={() => setCount(0)}>Reset</button>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+</body>
+</html>
