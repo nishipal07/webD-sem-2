@@ -7,19 +7,19 @@ export default function App() {
   const students = [
     {
       id: 1,
-      name: "Niharika Sharma",
+      name: "Rahul Sharma",
       course: "Computer Science",
       marks: 88
     },
     {
       id: 2,
-      name: "Neha gupta",
+      name: "Anita Verma",
       course: "Information Technology",
       marks: 90
     },
     {
       id: 3,
-      name: "Ankit chaubey",
+      name: "Rohan Gupta",
       course: "Electronics",
       marks: 85
     }
