@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+
+        body{
+            background-color: #f2f2f2;
+        }
+
+        /* Navbar */
+        .navbar{
+            background-color: #1f232b;
+        }
+
+        .navbar-brand,
+        .nav-link{
+            color: white !important;
+        }
+
+        /* Product Section */
+        .products{
+            padding: 60px 0;
+        }
+
+        .card{
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img{
+            height: 220px;
+            object-fit: contain;
+            padding: 20px;
+        }
+
+        .price{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer{
+            background-color: #1f232b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">TechStore</a>
+
+            <button-class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Laptop -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600" class="card-img-top" alt="Laptop">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Laptop</h3>
+
+                            <p class="card-text">
+                                High performance laptop
+                            </p>
+
+                            <p class="price">
+                                ₹50,000
+                                <span class="badge bg-success">New</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">
+                                View Details
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" class="card-img-top" alt="Mobile">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Mobile</h3>
+
+                            <p class="card-text">
+                                Latest smartphone
+                            </p>
+
+                            <p class="price">
+                                ₹30,000
+                                <span class="badge bg-danger">Sale</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">
+                                View Details
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Headphones -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" class="card-img-top" alt="Headphones">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Headphones</h3>
+
+                            <p class="card-text">
+                                Noise canceling
+                            </p>
+
+                            <p class="price">
+                                ₹5,000
+                                <span class="badge bg-success">New</span>
+                            </p>
+
+                            <a href="#" class="btn btn-primary">
+                                View Details
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 TechStore | Follow us on social media
+         <br>
+    <br>
+    <p id="names">Created by Nishi Pal</p>
+    <p id="roll_number">Roll number-2503215400113</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
